@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <Clock></Clock>
+    <Clock countdown-date="2018-10-24 08:15:00"></Clock>
   </div>
 </template>
 
