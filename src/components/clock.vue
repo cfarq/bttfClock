@@ -12,9 +12,9 @@
             </div>
             <div v-for="(time, index) in lastDeparted" :class="'present-'+index" class="clock yellow lastDep">{{ time }}</div>
 
-            <small>
-                ss{{ countdownSeconds }}
-                Diff: {{ weeks.count }}wk {{ days.count }}d {{ hours.count }}h {{ minutes.count }}m {{ seconds.count }}s</small>
+            <!--<small>-->
+                <!--ss{{ countdownSeconds }}-->
+                <!--Diff: {{ weeks.count }}wk {{ days.count }}d {{ hours.count }}h {{ minutes.count }}m {{ seconds.count }}s</small>-->
         </div>
     </div>
 </template>
@@ -242,7 +242,8 @@
             right: 429px;
         }
 
-        .hogit
+        .hours {
+            right: 235px;
         }
 
         .mins {
