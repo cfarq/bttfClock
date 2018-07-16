@@ -2,14 +2,7 @@
     <div class="countdown-container">
         <div class="countdown">
             <div v-for="(time, index) in destination" :class="'present-'+index" class="clock orange blink dest">{{ time }}</div>
-            <!--<div v-for="(time, index) in present" :class="'present-'+index" class="clock green pres">{{ time }}</div>-->
-            <div class="clock green pres">
-                <!--<div class="active month">JUL</div>-->
-                <div class="active days">{{ days.count }}</div>
-                <!--<div class="active year">2018</div>-->
-                <div class="active hours">{{ hours.count }}</div>
-                <div class="active mins">{{ minutes.count }}</div>
-            </div>
+            <div v-for="(time, index) in present" :class="'present-'+index" class="clock green pres">{{ time }}</div>
             <div v-for="(time, index) in lastDeparted" :class="'present-'+index" class="clock yellow lastDep">{{ time }}</div>
 
             <!--<small>-->
@@ -28,9 +21,9 @@
         return {
             time: null,
             // target
-            targetTime: new Date(2018, 6, 14, 19, 30),
+            targetTime: new Date(2018, 6, 30, 19, 0),
             // last departed
-            last: new Date(1985, 0, 1, 0, 0),
+            last: new Date(1985, 6, 3, 12, 0),
             // how fast to tick
             interval: 1000,
             now: moment.utc().format('X'),
@@ -170,7 +163,6 @@
         }
 
         .pres {
-            width: 100%;
             top: 244px;
         }
 
@@ -232,22 +224,6 @@
 
         .present-16 {
             right: 20px;
-        }
-
-        .days {
-            left: 294px;
-        }
-
-        .year {
-            right: 429px;
-        }
-
-        .hours {
-            right: 235px;
-        }
-
-        .mins {
-            right: 68px
         }
     }
 </style>
