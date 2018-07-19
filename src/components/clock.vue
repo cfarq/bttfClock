@@ -15,7 +15,7 @@
 <script>
     const floor = Math.floor;
     export default {
-        name: "clock.vue",
+        name: "clock",
     data() {
         // init as null
         return {
@@ -114,15 +114,17 @@
 
     .countdown {
         position: absolute;
-        width: 961px;
-        min-height: 60vh;
+        height: 50vh;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
         padding: 25px 50px;
         background-image: url('../assets/clockface.jpg');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
+        width: 88.725vh;
+        background-position: center;
 
         .yellow {
             color: #f4da6c;
@@ -153,7 +155,7 @@
 
         .clock {
             font-family: "clock-font", sans-serif, monospaced;
-            font-size: 7rem;
+            font-size: 6.7rem;
             position: absolute;
             letter-spacing: 6px;
         }
@@ -163,15 +165,15 @@
         }
 
         .pres {
-            top: 244px;
+            top: 234px;
         }
 
         .dest {
-            top: 37px;
+            top: 35px;
         }
 
         .lastDep {
-            bottom: 29px;
+            bottom: 25px;
         }
 
         .present-0 {
@@ -183,47 +185,47 @@
         }
 
         .present-2 {
-            right: 821px;
+            right: 824px;
         }
 
         .present-4 {
-            right: 710px;
+            right: 720px;
         }
 
         .present-5 {
-            right: 657px;
+            right: 667px;
         }
 
         .present-7 {
-            right: 550px;
+            right: 562px;
         }
 
         .present-8 {
-            right: 491px;
+            right: 511px;
         }
 
         .present-9 {
-            right: 438px;
+            right: 457px;
         }
 
         .present-10 {
-            right: 379px;
+            right: 400px;
         }
 
         .present-12 {
-            right: 241px;
+            right: 269px;
         }
 
         .present-13 {
-            right: 186px;
+            right: 216px;
         }
 
         .present-15 {
-            right: 75px;
+            right: 110px;
         }
 
         .present-16 {
-            right: 20px;
+            right: 57px;
         }
     }
 </style>

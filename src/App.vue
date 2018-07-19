@@ -20,7 +20,10 @@ export default {
 
 <style>
   body {
+    padding: 0;
+    margin: 0;
     background-color: black;
+    overflow: hidden;
   }
 
 #app {
