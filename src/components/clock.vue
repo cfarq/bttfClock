@@ -4,10 +4,6 @@
             <div v-for="(time, index) in destination" :class="'present-'+index" class="clock orange blink dest">{{ time }}</div>
             <div v-for="(time, index) in present" :class="'present-'+index" class="clock green pres">{{ time }}</div>
             <div v-for="(time, index) in lastDeparted" :class="'present-'+index" class="clock yellow lastDep">{{ time }}</div>
-
-            <!--<small>-->
-                <!--ss{{ countdownSeconds }}-->
-                <!--Diff: {{ weeks.count }}wk {{ days.count }}d {{ hours.count }}h {{ minutes.count }}m {{ seconds.count }}s</small>-->
         </div>
     </div>
 </template>
@@ -114,16 +110,11 @@
 
     .countdown {
         position: absolute;
-        height: 50vh;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-        padding: 25px 50px;
+        height: 1080px;
         background-image: url('../assets/clockface.jpg');
         background-size: contain;
         background-repeat: no-repeat;
-        width: 88.725vh;
+        width: 1920px;
         background-position: center;
 
         .yellow {
@@ -155,7 +146,7 @@
 
         .clock {
             font-family: "clock-font", sans-serif, monospaced;
-            font-size: 6.7rem;
+            font-size: 12.4rem;
             position: absolute;
             letter-spacing: 6px;
         }
@@ -165,67 +156,67 @@
         }
 
         .pres {
-            top: 234px;
+            top: 424px;
         }
 
         .dest {
-            top: 35px;
+            top: 58px;
         }
 
         .lastDep {
-            bottom: 25px;
+            bottom: 46px;
         }
 
         .present-0 {
-            right: 932px;
+            right: 1700px;
         }
 
         .present-1 {
-            right: 877px;
+            right: 1603px;
         }
 
         .present-2 {
-            right: 824px;
+            right: 1506px;
         }
 
         .present-4 {
-            right: 720px;
+            right: 1316px;
         }
 
         .present-5 {
-            right: 667px;
+            right: 1216px;
         }
 
         .present-7 {
-            right: 562px;
+            right: 1029px;
         }
 
         .present-8 {
-            right: 511px;
+            right: 931px;
         }
 
         .present-9 {
-            right: 457px;
+            right: 831px;
         }
 
         .present-10 {
-            right: 400px;
+            right: 731px;
         }
 
         .present-12 {
-            right: 269px;
+            right: 489px;
         }
 
         .present-13 {
-            right: 216px;
+            right: 391px;
         }
 
         .present-15 {
-            right: 110px;
+            right: 198px;
         }
 
         .present-16 {
-            right: 57px;
+            right: 99px;
         }
     }
 </style>
